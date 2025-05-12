@@ -2,7 +2,7 @@ import { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME} from './config.js';
 import { Sequelize } from 'sequelize';
 
 
-const sequelize = new Sequelize (DB_USER, DB_PASSWORD,DB_NAME,{
+const sequelize = new Sequelize (DB_NAME,DB_USER, DB_PASSWORD,{
     host: DB_HOST,
     dialect: 'mysql'
 });
